@@ -33,7 +33,7 @@ app.get('/setSymbol', async function (req, res) {
     let userID = req.query.userid;
     const symbolExists = await contract.methods
       .setSymbol(userID, symbolID)
-      .send({ from: "0xF902015Dd53121fBb4DE832E3Fb5C1D1b9CD18Ba"});
+      .send({ from: "your contract address"});
       res.end("SUCCESSFUL");
 })
 
